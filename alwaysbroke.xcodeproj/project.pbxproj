@@ -12,6 +12,7 @@
 		DC6495132198D71C00FD2626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6495112198D71C00FD2626 /* Main.storyboard */; };
 		DC6495152198D71D00FD2626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6495142198D71D00FD2626 /* Assets.xcassets */; };
 		DC6495182198D71D00FD2626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6495162198D71D00FD2626 /* LaunchScreen.storyboard */; };
+		DC6495242198DA9D00FD2626 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6495232198DA9D00FD2626 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DC6495142198D71D00FD2626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6495172198D71D00FD2626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6495192198D71D00FD2626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6495232198DA9D00FD2626 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		DC64950C2198D71C00FD2626 /* alwaysbroke */ = {
 			isa = PBXGroup;
 			children = (
-				DC64950D2198D71C00FD2626 /* AppDelegate.swift */,
-				DC64950F2198D71C00FD2626 /* ViewController.swift */,
-				DC6495112198D71C00FD2626 /* Main.storyboard */,
-				DC6495142198D71D00FD2626 /* Assets.xcassets */,
-				DC6495162198D71D00FD2626 /* LaunchScreen.storyboard */,
-				DC6495192198D71D00FD2626 /* Info.plist */,
+				DC6495222198D80800FD2626 /* Supporting Files */,
+				DC6495212198D7E300FD2626 /* Model */,
+				DC6495202198D7E100FD2626 /* View */,
+				DC64951F2198D7D500FD2626 /* Controller */,
 			);
 			path = alwaysbroke;
+			sourceTree = "<group>";
+		};
+		DC64951F2198D7D500FD2626 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC64950D2198D71C00FD2626 /* AppDelegate.swift */,
+				DC64950F2198D71C00FD2626 /* ViewController.swift */,
+				DC6495232198DA9D00FD2626 /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC6495202198D7E100FD2626 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC6495112198D71C00FD2626 /* Main.storyboard */,
+				DC6495162198D71D00FD2626 /* LaunchScreen.storyboard */,
+				DC6495142198D71D00FD2626 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC6495212198D7E300FD2626 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC6495222198D80800FD2626 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC6495192198D71D00FD2626 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6495242198DA9D00FD2626 /* SecondViewController.swift in Sources */,
 				DC6495102198D71C00FD2626 /* ViewController.swift in Sources */,
 				DC64950E2198D71C00FD2626 /* AppDelegate.swift in Sources */,
 			);
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U7W5D6NYY;
-				INFOPLIST_FILE = alwaysbroke/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/alwaysbroke/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U7W5D6NYY;
-				INFOPLIST_FILE = alwaysbroke/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/alwaysbroke/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
